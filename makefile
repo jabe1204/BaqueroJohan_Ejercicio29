@@ -9,4 +9,4 @@ ejercicio29.x : ejercicio29.cpp
 	
 	
 clean:
-	rm ejercicio.x datos.dat difusion.png
+	rm ejercicio29.x datos.dat difusion.png

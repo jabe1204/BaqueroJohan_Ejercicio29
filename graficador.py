@@ -4,22 +4,14 @@ import matplotlib.pylab as plt
 
 data = np.loadtxt("datos.dat")
 
-y = data[:,0]
-x1 = data[:,1]
-x2 = data[:,2]
-x3 = data[:,3]
-x4 = data[:,4]
-x5 = data[:,5]
-x6 = data[:,6]
-x7 = data[:,7]
+plt.figure(figsize=(12,4))
 
-plt.plot(x1,y)
-plt.plot(x2,y)
-plt.plot(x3,y)
-plt.plot(x4,y)
-plt.plot(x5,y)
-plt.plot(x6,y)
-plt.plot(x7,y)
+plt.subplot(1,3,1)
+plt.imshow(data)
 
+plt.subplot(1,3,2)
+for i in range(30):
+	plt.plot(data[:,0],data[:,i+1])
+	
 plt.savefig("difusion.png")
 
