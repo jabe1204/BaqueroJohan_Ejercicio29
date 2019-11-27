@@ -1,4 +1,4 @@
-difusion.png : datos.dat graficador.py
+EvolveA.png : datos.dat graficador.py
 	python graficador.py
 
 datos.dat : ejercicio29.x
